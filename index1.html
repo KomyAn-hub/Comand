@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новинний портал</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 250px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 300px;
+        }
+        
+        article p {
+            margin-bottom: 15px;
+        }
+        
+        mark {
+            background-color: #ffeaa7;
+            padding: 2px 5px;
+        }
+        
+        figure {
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        figcaption {
+            font-style: italic;
+            margin-top: 8px;
+            color: #7f8c8d;
+        }
+        
+        time {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        aside {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        aside ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+        
+        aside li {
+            margin-bottom: 10px;
+        }
+        
+        aside a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        aside a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            input[type="text"] {
+                width: 100%;
+                margin: 10px 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Новинний портал</h1>
+        <input type="text" placeholder="Пошук...">
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#politics">Політика</a></li>
+                <li><a href="#economy">Економіка</a></li>
+                <li><a href="#sport">Спорт</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article id="politics">
+            <h2>Політичні новини</h2>
+            <p>У цьому розділі ви знайдете найактуальніші новини політичного життя України та світу. Ми
+                висвітлюємо події у парламенті, рішення уряду, міжнародні відносини та виборчі процеси.
+                Наша мета — надавати достовірну інформацію, пояснювати складні політичні процеси простою мовою
+                та допомагати читачам краще розуміти події, що впливають на їхнє життя.
+            </p>
+            <p>Опубліковано: <time datetime="2023-10-15">15 жовтня 2023 року</time></p>
+            <figure>
+                <img src="https://surl.li/rmcogy" alt="Політика">
+                <figcaption>Політика</figcaption>
+            </figure>
+        </article>
+        
+        <article id="economy">
+            <h2>Економічні новини</h2>
+            <p><mark>Економіка — це фундамент суспільства, який вивчає, як люди використовують обмежені ресурси
+                для виробництва товарів та послуг і розподіляють їх між собою.</mark>
+                Вона впливає на ціни в магазинах, рівень заробітних плат та навіть на те,
+                 скільки нових робочих
+                місць з'являється в країні.
+                Здорова економіка забезпечує стабільність і підвищує добробут громадян.</p>
+            <p>Опубліковано: <time datetime="2023-10-15">15 жовтня 2023 року</time></p>
+            <figure>
+                <img src="https://surl.li/ndpmjc" alt="Економіка">
+                <figcaption>Економіка</figcaption>
+            </figure>
+        </article>
+        
+        <article id="sport">
+            <h2>Спортивні новини</h2>
+            <p>Спорт — це потужний соціальний інститут, який об'єднує людей навколо ідеї здорового способу життя,
+                чесного суперництва та досягнення майстерності. Він виховує характер, дисципліну та волю до перемоги,
+                що важливо не лише на майданчику, але й у повсякденному житті.
+                <mark>Успіхи у спорті підвищують престиж країни на міжнародній арені та надихають ціле покоління на
+                    власні досягнення.</mark>
+            </p>
+            <p>Опубліковано: <time datetime="2023-10-15">15 жовтня 2023 року</time></p>
+            <figure>
+                <img src="https://surl.li/lgfvft" alt="Спорт">
+                <figcaption>Спорт</figcaption>
+            </figure>
+        </article>
+    </main>
+    
+    <aside>
+        <h3>Корисна інформація</h3>
+        <p>Останнє оновлення: <time datetime="2025-09-17">17 вересня 2025 року</time></p>
+        <p>Корисні посилання:</p>
+        <ul>
+            <li><a href="https://www.ukr.net/news/world.html">Головні і свіжі новини Світу за сьогодні</a></li>
+            <li><a href="https://suspilne.media/world/">СВІТ — Суспільне Новини</a></li>
+            <li><a href="https://www.ukrinform.ua/">Останні новини України і світу, новини онлайн</a></li>
+            <li><a href="https://zaxid.net/svit_tag50962/">Всі останні світові новини</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; <time datetime="2025">2025</time> Новинний світ. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
